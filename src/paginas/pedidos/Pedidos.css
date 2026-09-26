@@ -1,0 +1,755 @@
+/* ============================================================
+   PÁGINA DE PEDIDOS
+   ============================================================ */
+
+.pagina-pedidos {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px 100px;
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   CABEÇALHO
+   ============================================================ */
+
+.cabecalho-pedidos {
+  margin-bottom: 24px;
+}
+
+.titulo-pedidos {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icone-titulo-pedidos {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f4e5ce;
+  border-radius: 16px;
+
+  font-size: 26px;
+}
+
+.cabecalho-pedidos h1 {
+  margin: 0;
+
+  font-size: 28px;
+  line-height: 1.2;
+
+  color: #3b2415;
+}
+
+.cabecalho-pedidos p {
+  margin: 5px 0 0;
+
+  color: #777;
+
+  font-size: 15px;
+}
+
+
+/* ============================================================
+   LISTA DE PEDIDOS
+   ============================================================ */
+
+.lista-pedidos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* ============================================================
+   CARD DO PEDIDO
+   ============================================================ */
+
+.card-pedido {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ============================================================
+   CABEÇALHO DO CARD
+   ============================================================ */
+
+.cabecalho-card-pedido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.numero-pedido-label {
+  display: block;
+
+  color: #888;
+
+  font-size: 13px;
+
+  margin-bottom: 3px;
+}
+
+.numero-pedido {
+  color: #3b2415;
+
+  font-size: 18px;
+}
+
+.data-pedido {
+  color: #888;
+
+  font-size: 13px;
+
+  text-align: right;
+}
+
+
+/* ============================================================
+   STATUS
+   ============================================================ */
+
+.status-pedido {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 18px 0;
+}
+
+.icone-status-pedido {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #f4e5ce;
+
+  font-size: 23px;
+}
+
+.status-pedido strong {
+  display: block;
+
+  color: #3b2415;
+
+  font-size: 17px;
+}
+
+.status-pedido p {
+  margin: 4px 0 0;
+
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+
+/* ============================================================
+   ACOMPANHAMENTO DO PEDIDO
+   ============================================================ */
+
+.acompanhamento-pedido {
+  display: flex;
+
+  align-items: flex-start;
+
+  width: 100%;
+
+  margin: 10px 0 24px;
+
+  padding: 10px 0 8px;
+
+  /*
+   * Permite rolagem somente quando a tela for muito pequena.
+   * Em computador as etapas ocupam toda a largura normalmente.
+   */
+  overflow-x: auto;
+
+  box-sizing: border-box;
+
+  /*
+   * Evita que a barra de rolagem apareça desnecessariamente
+   * quando existe espaço suficiente.
+   */
+  scrollbar-width: thin;
+}
+
+
+/* ============================================================
+   CADA ETAPA
+   ============================================================ */
+
+.etapa-pedido {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  /*
+   * Antes havia apenas 85px.
+   * Aumentamos o espaço para garantir que "Em preparo"
+   * fique sempre inteiro.
+   */
+  min-width: 110px;
+
+  /*
+   * As etapas dividem igualmente o espaço disponível.
+   */
+  flex: 1 1 110px;
+
+  /*
+   * Evita que uma etapa seja espremida pelo flex.
+   */
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   CÍRCULO DA ETAPA
+   ============================================================ */
+
+.circulo-etapa {
+  position: relative;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eeeeee;
+
+  color: #888;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  z-index: 3;
+
+  flex-shrink: 0;
+}
+
+
+/* Etapa concluída */
+
+.etapa-pedido.concluida .circulo-etapa {
+  background: #c56a27;
+
+  color: #ffffff;
+}
+
+
+/* ============================================================
+   TEXTO DA ETAPA
+   ============================================================ */
+
+.etapa-pedido span {
+  display: block;
+
+  /*
+   * Garante espaço suficiente para "Em preparo".
+   */
+  min-width: 90px;
+
+  margin-top: 8px;
+
+  font-size: 11px;
+
+  line-height: 1.2;
+
+  color: #888;
+
+  text-align: center;
+
+  /*
+   * Nunca quebra "Em preparo" em duas linhas.
+   */
+  white-space: nowrap;
+
+  /*
+   * Impede que o texto seja cortado.
+   */
+  overflow: visible;
+
+  /*
+   * Mantém o texto acima da linha de conexão.
+   */
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* Texto da etapa concluída */
+
+.etapa-pedido.concluida span {
+  color: #c56a27;
+
+  font-weight: 600;
+}
+
+
+/* ============================================================
+   LINHA ENTRE AS ETAPAS
+   ============================================================ */
+
+.linha-etapa {
+  position: absolute;
+
+  /*
+   * A linha passa pelo centro do círculo.
+   */
+  top: 16px;
+
+  /*
+   * Começa depois do círculo.
+   */
+  left: calc(50% + 16px);
+
+  /*
+   * Termina antes do próximo círculo.
+   */
+  width: calc(100% - 32px);
+
+  height: 3px;
+
+  background: #eeeeee;
+
+  z-index: 1;
+
+  border-radius: 10px;
+}
+
+
+/* Linha de etapa concluída */
+
+.linha-etapa.concluida {
+  background: #c56a27;
+}
+
+
+/* ============================================================
+   PRODUTOS
+   ============================================================ */
+
+.produtos-do-pedido {
+  padding-top: 18px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.produtos-do-pedido h3 {
+  margin: 0 0 12px;
+
+  color: #3b2415;
+
+  font-size: 16px;
+}
+
+.item-pedido {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.informacoes-item-pedido {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  min-width: 0;
+}
+
+.informacoes-item-pedido strong {
+  color: #3b2415;
+
+  font-size: 14px;
+}
+
+.informacoes-item-pedido span {
+  color: #888;
+
+  font-size: 12px;
+}
+
+.item-pedido > strong {
+  color: #3b2415;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   OBSERVAÇÃO
+   ============================================================ */
+
+.observacao-pedido {
+  margin-top: 16px;
+
+  padding: 12px 14px;
+
+  background: #faf7f2;
+
+  border-radius: 12px;
+}
+
+.observacao-pedido strong {
+  display: block;
+
+  color: #3b2415;
+
+  font-size: 13px;
+
+  margin-bottom: 5px;
+}
+
+.observacao-pedido p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+
+/* ============================================================
+   PAGAMENTO
+   ============================================================ */
+
+.pagamento-pedido {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 16px;
+
+  color: #666;
+
+  font-size: 13px;
+}
+
+.pagamento-pedido strong {
+  color: #3b2415;
+}
+
+
+/* ============================================================
+   TOTAL
+   ============================================================ */
+
+.total-pedido {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 18px;
+
+  padding-top: 16px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.total-pedido span {
+  color: #555;
+
+  font-size: 15px;
+}
+
+.total-pedido strong {
+  color: #c56a27;
+
+  font-size: 21px;
+}
+
+
+/* ============================================================
+   PEDIDOS VAZIOS
+   ============================================================ */
+
+.pedidos-vazio {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  min-height: 350px;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.icone-pedidos-vazio {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  border-radius: 24px;
+
+  background: #f4e5ce;
+
+  font-size: 38px;
+}
+
+.pedidos-vazio h2 {
+  margin: 0 0 8px;
+
+  color: #3b2415;
+
+  font-size: 20px;
+}
+
+.pedidos-vazio p {
+  max-width: 400px;
+
+  margin: 0;
+
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   STATUS CANCELADO
+   ============================================================ */
+
+.card-pedido.cancelado {
+  border-color: #f1d0d0;
+}
+
+.card-pedido.cancelado .icone-status-pedido {
+  background: #fdeaea;
+}
+
+.card-pedido.cancelado .status-pedido strong {
+  color: #b33a3a;
+}
+
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .pagina-pedidos {
+    padding: 18px 14px 100px;
+  }
+
+
+  .cabecalho-pedidos h1 {
+    font-size: 23px;
+  }
+
+
+  .cabecalho-pedidos p {
+    font-size: 13px;
+  }
+
+
+  .icone-titulo-pedidos {
+    width: 46px;
+    height: 46px;
+
+    font-size: 22px;
+  }
+
+
+  .card-pedido {
+    padding: 16px;
+
+    border-radius: 17px;
+  }
+
+
+  .cabecalho-card-pedido {
+    align-items: flex-start;
+  }
+
+
+  .numero-pedido {
+    font-size: 16px;
+  }
+
+
+  .data-pedido {
+    font-size: 11px;
+  }
+
+
+  .status-pedido {
+    padding: 15px 0;
+  }
+
+
+  .icone-status-pedido {
+    width: 43px;
+    height: 43px;
+
+    font-size: 20px;
+  }
+
+
+  .status-pedido strong {
+    font-size: 15px;
+  }
+
+
+  .status-pedido p {
+    font-size: 12px;
+  }
+
+
+  /* ==========================================================
+     ACOMPANHAMENTO NO CELULAR
+     ========================================================== */
+
+  .acompanhamento-pedido {
+    /*
+     * Mantém todas as etapas visíveis com espaço suficiente.
+     * Se a tela for pequena demais, permite deslizar
+     * horizontalmente.
+     */
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-bottom: 12px;
+  }
+
+
+  .etapa-pedido {
+    /*
+     * Mantemos uma largura confortável para:
+     *
+     * Recebido
+     * Em preparo
+     * Pronto
+     * Finalizado
+     */
+    min-width: 100px;
+
+    flex: 0 0 100px;
+  }
+
+
+  .etapa-pedido span {
+    min-width: 90px;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+  }
+
+
+  .linha-etapa {
+    width: calc(100% - 32px);
+  }
+
+
+  .item-pedido {
+    align-items: flex-start;
+  }
+
+
+  .informacoes-item-pedido {
+    min-width: 0;
+  }
+
+
+  .item-pedido > strong {
+    font-size: 13px;
+  }
+
+
+  .total-pedido strong {
+    font-size: 19px;
+  }
+
+}

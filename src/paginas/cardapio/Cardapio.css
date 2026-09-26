@@ -1,0 +1,222 @@
+.pagina-cardapio {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px 100px;
+}
+
+
+.cabecalho-cardapio {
+  margin-bottom: 25px;
+}
+
+
+.cabecalho-cardapio p {
+  margin: 0 0 8px;
+
+  font-size: 14px;
+
+  color: #c96b32;
+
+  font-weight: 700;
+}
+
+
+.cabecalho-cardapio h1 {
+  margin: 0;
+
+  font-size: 30px;
+
+  color: #252525;
+}
+
+
+.cabecalho-cardapio span {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #777777;
+}
+
+
+/* PESQUISA */
+
+.pesquisa-cardapio {
+  width: 100%;
+
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 14px;
+
+  padding: 0 16px;
+
+  margin-bottom: 20px;
+}
+
+
+.pesquisa-cardapio span {
+  font-size: 20px;
+}
+
+
+.pesquisa-cardapio input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: transparent;
+}
+
+
+/* CATEGORIAS */
+
+.categorias-cardapio {
+  display: flex;
+
+  gap: 10px;
+
+  overflow-x: auto;
+
+  padding-bottom: 10px;
+
+  margin-bottom: 25px;
+}
+
+
+.categorias-cardapio button {
+  flex-shrink: 0;
+
+  border: 1px solid #eeeeee;
+
+  background: #ffffff;
+
+  padding: 10px 16px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+
+.categorias-cardapio button:hover {
+  background: #f7f7f7;
+}
+
+
+.categorias-cardapio
+.categoria-selecionada {
+
+  background: #c96b32;
+
+  color: #ffffff;
+
+  border-color: #c96b32;
+}
+
+
+/* PRODUTOS */
+
+.titulo-cardapio {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+
+.titulo-cardapio h2 {
+  margin: 0;
+
+  font-size: 22px;
+}
+
+
+.titulo-cardapio span {
+  color: #777777;
+
+  font-size: 14px;
+}
+
+
+.lista-produtos-cardapio {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 16px;
+}
+
+
+/* VAZIO */
+
+.cardapio-vazio {
+  text-align: center;
+
+  padding: 60px 20px;
+
+  color: #777777;
+}
+
+
+.cardapio-vazio span {
+  font-size: 45px;
+}
+
+
+.cardapio-vazio h3 {
+  color: #333333;
+
+  margin: 15px 0 5px;
+}
+
+
+.cardapio-vazio p {
+  margin: 0;
+}
+
+
+/* TABLET */
+
+@media (min-width: 600px) {
+
+  .lista-produtos-cardapio {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* COMPUTADOR */
+
+@media (min-width: 1000px) {
+
+  .lista-produtos-cardapio {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}

@@ -1,0 +1,233 @@
+.pagina-perfil {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px 110px;
+}
+
+.cabecalho-perfil {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.avatar-perfil {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #c96b32;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.cabecalho-perfil h1 {
+  margin: 0 0 5px;
+  color: #2f2f2f;
+  font-size: 27px;
+}
+
+.cabecalho-perfil p {
+  margin: 0;
+  color: #777777;
+}
+
+.dados-perfil,
+.atalhos-perfil {
+  padding: 22px;
+  margin-bottom: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.dados-perfil h2,
+.atalhos-perfil h2 {
+  margin: 0 0 18px;
+  color: #2f2f2f;
+  font-size: 19px;
+}
+
+.campo-perfil {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.campo-perfil:last-child {
+  border-bottom: none;
+}
+
+.campo-perfil > span {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fff8f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.campo-perfil div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.campo-perfil small {
+  color: #888888;
+  font-size: 12px;
+}
+
+.campo-perfil strong {
+  color: #333333;
+  font-size: 14px;
+}
+
+.atalhos-perfil button {
+  width: 100%;
+  min-height: 68px;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.atalhos-perfil button:last-child {
+  border-bottom: none;
+}
+
+.atalhos-perfil button > span {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: #fff8f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.atalhos-perfil button div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.atalhos-perfil button strong {
+  color: #333333;
+  font-size: 14px;
+}
+
+.atalhos-perfil button small {
+  color: #888888;
+  font-size: 12px;
+}
+
+.atalhos-perfil button b {
+  color: #aaaaaa;
+  font-size: 25px;
+}
+
+.atalhos-perfil button:hover {
+  background: #fafafa;
+}
+
+.acoes-perfil {
+  margin-top: 10px;
+}
+
+.botao-sair {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #e5bcbc;
+  border-radius: 10px;
+  background: #fff5f5;
+  color: #b84444;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao-sair:hover {
+  background: #ffeaea;
+}
+
+.perfil-login {
+  max-width: 550px;
+  margin: 60px auto;
+  padding: 40px 25px;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.icone-perfil {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #fff8f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+}
+
+.perfil-login h1 {
+  margin: 0 0 12px;
+  color: #2f2f2f;
+}
+
+.perfil-login p {
+  max-width: 430px;
+  margin: 0 auto 25px;
+  color: #777777;
+  line-height: 1.6;
+}
+
+.perfil-login button {
+  width: 100%;
+  max-width: 350px;
+  min-height: 46px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #c96b32;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.perfil-login .botao-secundario {
+  background: #ffffff;
+  border: 1px solid #c96b32;
+  color: #c96b32;
+}
+
+@media (max-width: 600px) {
+  .pagina-perfil {
+    padding: 20px 15px 100px;
+  }
+
+  .cabecalho-perfil h1 {
+    font-size: 23px;
+  }
+
+  .dados-perfil,
+  .atalhos-perfil {
+    padding: 18px;
+  }
+}

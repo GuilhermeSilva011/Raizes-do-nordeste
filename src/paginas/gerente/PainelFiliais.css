@@ -1,0 +1,169 @@
+.fundo-filiais {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 2200;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+}
+
+
+.painel-filiais {
+  width: 100%;
+
+  max-width: 700px;
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 25px;
+}
+
+
+.cabecalho-filiais {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+
+.cabecalho-filiais span {
+  font-size: 11px;
+
+  font-weight: bold;
+
+  color: #d9903d;
+}
+
+
+.cabecalho-filiais h2 {
+  margin: 5px 0 0;
+
+  font-size: 25px;
+}
+
+
+.cabecalho-filiais button {
+  width: 40px;
+
+  height: 40px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f1f1f1;
+
+  cursor: pointer;
+}
+
+
+.lista-filiais {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.card-filial {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 18px;
+
+  border: 1px solid #eee;
+
+  border-radius: 15px;
+}
+
+
+.icone-filial {
+  width: 55px;
+
+  height: 55px;
+
+  border-radius: 12px;
+
+  background: #fff3e4;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 28px;
+}
+
+
+.card-filial > div:nth-child(2) {
+  flex: 1;
+}
+
+
+.card-filial h3 {
+  margin: 0 0 5px;
+}
+
+
+.card-filial p {
+  margin: 0 0 5px;
+
+  color: #777;
+}
+
+
+.card-filial span {
+  font-size: 13px;
+
+  color: #777;
+}
+
+
+.card-filial strong {
+  color: #248a3d;
+}
+
+
+.botao-nova-filial {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #d9903d;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}

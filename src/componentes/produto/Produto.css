@@ -1,0 +1,156 @@
+.card-produto {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #eadfd3;
+  border-radius: 18px;
+
+  box-shadow: 0 5px 15px rgba(78, 43, 26, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card-produto:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(78, 43, 26, 0.11);
+}
+
+.imagem-produto {
+  height: 180px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f7eee4;
+}
+
+.imagem-produto > span {
+  font-size: 72px;
+}
+
+.botao-favorito {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  font-size: 20px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.botao-favorito:hover {
+  transform: scale(1.05);
+}
+
+.informacoes-produto {
+  padding: 16px;
+}
+
+.categoria-produto {
+  display: inline-block;
+
+  margin-bottom: 7px;
+
+  color: #a95a31;
+
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.informacoes-produto h3 {
+  margin: 0;
+
+  color: #4e2b1a;
+
+  font-size: 18px;
+}
+
+.informacoes-produto p {
+  min-height: 42px;
+
+  margin: 8px 0 15px;
+
+  color: #766b64;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.rodape-produto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.preco-produto {
+  color: #8f421f;
+  font-size: 18px;
+}
+
+.botao-adicionar {
+  padding: 9px 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  border-radius: 10px;
+
+  background: #a94f25;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.botao-adicionar:hover {
+  background: #843e1d;
+  transform: translateY(-1px);
+}
+
+.botao-adicionar span {
+  font-size: 17px;
+}
+
+@media (max-width: 500px) {
+  .imagem-produto {
+    height: 150px;
+  }
+
+  .imagem-produto > span {
+    font-size: 58px;
+  }
+
+  .informacoes-produto {
+    padding: 14px;
+  }
+
+  .rodape-produto {
+    align-items: flex-end;
+  }
+}

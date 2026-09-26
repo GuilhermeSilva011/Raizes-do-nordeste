@@ -1,0 +1,302 @@
+/* ==================================================
+   CONFIGURAÇÕES GERAIS DA APLICAÇÃO
+   ================================================== */
+
+/* Faz com que padding e bordas sejam incluídos
+   dentro do tamanho total dos elementos */
+* {
+  box-sizing: border-box;
+}
+
+/* Configuração visual padrão da página */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f5ef;
+  color: #29231f;
+}
+
+/* Faz com que botões e campos de texto utilizem
+   a mesma fonte definida para o restante da página */
+button,
+input {
+  font-family: inherit;
+}
+
+/* Remove a borda padrão dos botões e indica
+   visualmente que eles podem ser clicados */
+button {
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ==================================================
+   ESTRUTURA PRINCIPAL DO APLICATIVO
+   ================================================== */
+
+/* Define a altura mínima para ocupar toda a tela.
+   O espaço inferior evita que o conteúdo fique
+   escondido atrás do menu inferior no celular. */
+.aplicativo {
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+
+/* ==================================================
+   CABEÇALHO
+   ================================================== */
+
+/* Área superior contendo a logo e o botão do carrinho */
+.cabecalho {
+  height: 72px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+  border-bottom: 1px solid #eee8df;
+}
+
+/* Organiza o ícone e o nome da marca lado a lado */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Define o tamanho do símbolo principal da logo */
+.logo > span {
+  font-size: 32px;
+}
+
+/* Nome principal da marca */
+.logo strong {
+  display: block;
+  font-size: 18px;
+}
+
+/* Complemento do nome da marca */
+.logo small {
+  display: block;
+  font-size: 11px;
+  color: #9a5a25;
+  margin-top: 2px;
+}
+
+/* Botão utilizado para acessar o carrinho */
+.botao-carrinho {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+  background: #f4eadc;
+
+  font-size: 19px;
+}
+
+
+/* ==================================================
+   CONTEÚDO PRINCIPAL
+   ================================================== */
+
+/* Área onde estão localizadas as informações
+   principais da tela inicial */
+.conteudo-principal {
+  padding: 22px 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+/* ==================================================
+   ÁREA DE BOAS-VINDAS
+   ================================================== */
+
+/* Texto menor utilizado na saudação */
+.boas-vindas p {
+  margin: 0 0 5px;
+  color: #8a8179;
+  font-size: 14px;
+}
+
+/* Pergunta principal apresentada ao usuário */
+.boas-vindas h1 {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+
+/* ==================================================
+   CAMPO DE PESQUISA
+   ================================================== */
+
+/* Container que envolve o ícone e o campo de pesquisa */
+.pesquisa {
+  height: 50px;
+
+  background: #ffffff;
+  border: 1px solid #ebe5dc;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 15px;
+  margin: 22px 0;
+}
+
+/* Tamanho do ícone de pesquisa */
+.pesquisa span {
+  font-size: 17px;
+}
+
+/* Campo onde o usuário poderá pesquisar produtos */
+.pesquisa input {
+  border: none;
+  outline: none;
+
+  width: 100%;
+  font-size: 14px;
+
+  background: transparent;
+}
+
+
+/* ==================================================
+   TÍTULOS DAS SEÇÕES
+   ================================================== */
+
+/* Utilizado para organizar títulos como
+   "Categorias" e "Mais pedidos" junto ao botão
+   de visualização completa */
+.titulo-secao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 13px;
+}
+
+/* Título principal de cada seção */
+.titulo-secao h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Botão utilizado para visualizar todos os itens */
+.titulo-secao button {
+  background: transparent;
+  color: #a55f27;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* ==================================================
+   CATEGORIAS DO CARDÁPIO
+   ================================================== */
+
+/* Organiza as categorias horizontalmente.
+   Caso não caibam na tela, o usuário poderá
+   deslizar para visualizar as próximas opções. */
+.lista-categorias {
+  display: flex;
+  gap: 10px;
+
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+/* Oculta a barra de rolagem em navegadores WebKit,
+   deixando a navegação horizontal mais limpa */
+.lista-categorias::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilo padrão de cada categoria */
+.categoria {
+  min-width: 72px;
+  height: 82px;
+
+  border-radius: 15px;
+  background: #ffffff;
+  border: 1px solid #eee6dc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 6px;
+}
+
+/* Define o tamanho do ícone da categoria */
+.categoria span {
+  font-size: 25px;
+}
+
+/* Nome apresentado abaixo do ícone */
+.categoria small {
+  font-size: 10px;
+  color: #665d56;
+}
+
+/* Categoria selecionada pelo usuário */
+.categoria.ativa {
+  background: #a95e25;
+  border-color: #a95e25;
+}
+
+/* Altera a cor do texto da categoria selecionada
+   para melhorar o contraste */
+.categoria.ativa small {
+  color: #ffffff;
+}
+
+
+/* ==================================================
+   PRODUTOS EM DESTAQUE
+   ================================================== */
+
+/* Cria um espaço entre as categorias e os produtos */
+.produtos {
+  margin-top: 25px;
+}
+
+/* Organiza inicialmente os produtos em uma coluna,
+   facilitando a visualização em smartphones */
+.lista-produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ==================================================
+   ADAPTAÇÃO PARA TELAS MAIORES
+   ================================================== */
+
+/* A partir de 768px, a interface começa a se adaptar
+   para tablets e computadores */
+@media (min-width: 768px) {
+
+  /* Aumenta a largura disponível para o conteúdo */
+  .conteudo-principal {
+    max-width: 1000px;
+    padding: 35px 30px;
+  }
+
+  /* Em telas maiores, os produtos passam a ser
+     exibidos lado a lado */
+  .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}

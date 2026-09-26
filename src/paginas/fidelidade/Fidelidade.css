@@ -1,0 +1,346 @@
+.pagina-fidelidade {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px 110px;
+}
+
+.cabecalho-fidelidade {
+  margin-bottom: 25px;
+}
+
+.cabecalho-fidelidade span {
+  font-size: 30px;
+}
+
+.cabecalho-fidelidade h1 {
+  margin: 5px 0;
+  color: #2f2f2f;
+  font-size: 30px;
+}
+
+.cabecalho-fidelidade p {
+  margin: 0;
+  color: #777777;
+}
+
+.card-pontos {
+  padding: 25px;
+  border-radius: 20px;
+  background: #fff8f2;
+  border: 1px solid #f1dfd1;
+}
+
+.pontos-principal {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.icone-pontos {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.pontos-principal div {
+  display: flex;
+  flex-direction: column;
+}
+
+.pontos-principal small {
+  color: #777777;
+  font-size: 13px;
+}
+
+.pontos-principal strong {
+  color: #2f2f2f;
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.pontos-principal span:last-child {
+  color: #c96b32;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.progresso-fidelidade {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.topo-progresso {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #555555;
+  font-size: 13px;
+}
+
+.topo-progresso strong {
+  color: #c96b32;
+}
+
+.barra-progresso {
+  width: 100%;
+  height: 12px;
+  border-radius: 20px;
+  background: #eeeeee;
+  overflow: hidden;
+}
+
+.preenchimento-progresso {
+  height: 100%;
+  border-radius: 20px;
+  background: #c96b32;
+  transition: width 0.4s ease;
+}
+
+.progresso-fidelidade p {
+  margin: 10px 0 0;
+  color: #777777;
+  font-size: 13px;
+}
+
+.mensagem-nivel-concluido {
+  color: #2f7d42 !important;
+  font-weight: 700;
+}
+
+.beneficios-fidelidade,
+.historico-fidelidade {
+  margin-top: 25px;
+  padding: 25px;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.beneficios-fidelidade h2,
+.historico-fidelidade h2 {
+  margin: 0 0 20px;
+  color: #2f2f2f;
+}
+
+.lista-beneficios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.beneficio {
+  display: flex;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #fafafa;
+}
+
+.beneficio > span {
+  font-size: 28px;
+}
+
+.beneficio h3 {
+  margin: 0 0 7px;
+  color: #333333;
+  font-size: 15px;
+}
+
+.beneficio p {
+  margin: 0;
+  color: #777777;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.titulo-historico {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.titulo-historico h2 {
+  margin-bottom: 4px;
+}
+
+.titulo-historico p {
+  margin: 0;
+  color: #888888;
+  font-size: 13px;
+}
+
+.titulo-historico > strong {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #fff8f2;
+  color: #c96b32;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.lista-historico-fidelidade {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-historico-fidelidade {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.item-historico-fidelidade:last-child {
+  border-bottom: none;
+}
+
+.icone-historico {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #fff8f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.informacoes-historico {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.informacoes-historico strong {
+  color: #333333;
+  font-size: 14px;
+}
+
+.informacoes-historico small {
+  color: #888888;
+  font-size: 12px;
+}
+
+.pontos-ganhos {
+  color: #2f7d42;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.fidelidade-login {
+  max-width: 550px;
+  margin: 60px auto;
+  padding: 40px 25px;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.icone-fidelidade {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #fff8f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+}
+
+.fidelidade-login h1 {
+  margin: 0 0 12px;
+  color: #2f2f2f;
+}
+
+.fidelidade-login p {
+  max-width: 430px;
+  margin: 0 auto 25px;
+  color: #777777;
+  line-height: 1.6;
+}
+
+.fidelidade-login button,
+.historico-vazio button {
+  width: 100%;
+  max-width: 350px;
+  min-height: 46px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #c96b32;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.fidelidade-login .botao-secundario-fidelidade {
+  background: #ffffff;
+  border: 1px solid #c96b32;
+  color: #c96b32;
+}
+
+.historico-vazio {
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.historico-vazio > span {
+  font-size: 38px;
+}
+
+.historico-vazio h3 {
+  margin: 10px 0;
+  color: #333333;
+}
+
+.historico-vazio p {
+  margin: 0 auto 15px;
+  color: #777777;
+}
+
+@media (max-width: 800px) {
+  .lista-beneficios {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .pagina-fidelidade {
+    padding: 20px 15px 100px;
+  }
+
+  .cabecalho-fidelidade h1 {
+    font-size: 25px;
+  }
+
+  .card-pontos,
+  .beneficios-fidelidade,
+  .historico-fidelidade {
+    padding: 18px;
+  }
+
+  .pontos-principal strong {
+    font-size: 35px;
+  }
+
+  .titulo-historico {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,272 @@
+.pagina-endereco {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px 110px;
+}
+
+.cabecalho-endereco {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.cabecalho-endereco > span {
+  font-size: 38px;
+}
+
+.cabecalho-endereco h1 {
+  margin: 0 0 5px;
+  color: #2f2f2f;
+  font-size: 30px;
+}
+
+.cabecalho-endereco p {
+  margin: 0;
+  color: #777777;
+}
+
+.formulario-endereco {
+  padding: 28px;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.titulo-formulario-endereco {
+  margin-bottom: 25px;
+}
+
+.titulo-formulario-endereco h2 {
+  margin: 0 0 5px;
+  color: #2f2f2f;
+  font-size: 21px;
+}
+
+.titulo-formulario-endereco p {
+  margin: 0;
+  color: #888888;
+  font-size: 13px;
+}
+
+.grupo-campo-endereco {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.grupo-campo-endereco label {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.grupo-campo-endereco input,
+.grupo-campo-endereco select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 13px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #333333;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.grupo-campo-endereco input:focus,
+.grupo-campo-endereco select:focus {
+  border-color: #c96b32;
+}
+
+.linha-endereco {
+  display: flex;
+  gap: 15px;
+}
+
+.campo-maior {
+  flex: 1;
+}
+
+.campo-numero {
+  width: 150px;
+}
+
+.campo-estado {
+  width: 120px;
+}
+
+.acoes-endereco {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.acoes-endereco button {
+  min-height: 46px;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao-voltar-endereco {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #666666;
+}
+
+.botao-salvar-endereco {
+  border: none;
+  background: #c96b32;
+  color: #ffffff;
+}
+
+.botao-salvar-endereco:hover {
+  background: #b85d28;
+}
+
+.mensagem-sucesso-endereco,
+.mensagem-erro-endereco {
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mensagem-sucesso-endereco {
+  background: #eefaf1;
+  color: #2f7d42;
+}
+
+.mensagem-erro-endereco {
+  background: #fff1f1;
+  color: #b84444;
+}
+
+.resumo-endereco {
+  margin-top: 20px;
+  padding: 22px;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.topo-resumo-endereco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.topo-resumo-endereco h2 {
+  margin: 0;
+  color: #2f2f2f;
+  font-size: 19px;
+}
+
+.topo-resumo-endereco span {
+  font-size: 25px;
+}
+
+.resumo-endereco p {
+  margin: 5px 0;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.resumo-endereco small {
+  display: block;
+  margin-top: 12px;
+  color: #888888;
+}
+
+.endereco-login {
+  max-width: 550px;
+  margin: 60px auto;
+  padding: 40px 25px;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.icone-endereco {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #fff8f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+}
+
+.endereco-login h1 {
+  margin: 0 0 12px;
+  color: #2f2f2f;
+}
+
+.endereco-login p {
+  max-width: 430px;
+  margin: 0 auto 25px;
+  color: #777777;
+  line-height: 1.6;
+}
+
+.endereco-login button {
+  width: 100%;
+  max-width: 350px;
+  min-height: 46px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #c96b32;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.endereco-login .botao-secundario-endereco {
+  background: #ffffff;
+  border: 1px solid #c96b32;
+  color: #c96b32;
+}
+
+@media (max-width: 600px) {
+  .pagina-endereco {
+    padding: 20px 15px 100px;
+  }
+
+  .cabecalho-endereco h1 {
+    font-size: 25px;
+  }
+
+  .formulario-endereco {
+    padding: 20px 16px;
+  }
+
+  .linha-endereco {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .campo-numero,
+  .campo-estado {
+    width: 100%;
+  }
+
+  .acoes-endereco {
+    flex-direction: column-reverse;
+  }
+
+  .acoes-endereco button {
+    width: 100%;
+  }
+}

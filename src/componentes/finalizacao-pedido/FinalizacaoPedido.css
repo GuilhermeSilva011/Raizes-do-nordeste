@@ -1,0 +1,262 @@
+/* Fundo */
+
+.fundo-finalizacao {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 1100;
+}
+
+
+/* Painel */
+
+.painel-finalizacao {
+  width: 100%;
+
+  max-width: 500px;
+
+  background: white;
+
+  border-radius: 26px;
+
+  padding: 35px 25px;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Ícone */
+
+.icone-sucesso {
+  width: 75px;
+
+  height: 75px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #e7f7ec;
+
+  color: #2d9b52;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 42px;
+
+  font-weight: bold;
+}
+
+
+/* Título */
+
+.painel-finalizacao h1 {
+  margin: 0;
+
+  font-size: 28px;
+}
+
+
+.mensagem-sucesso {
+  color: #777;
+
+  margin: 8px 0 25px;
+}
+
+
+/* Número do pedido */
+
+.numero-pedido {
+  background: #fff5e8;
+
+  border: 1px solid #f0d5ad;
+
+  border-radius: 16px;
+
+  padding: 16px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.numero-pedido span {
+  font-size: 13px;
+
+  color: #777;
+}
+
+
+.numero-pedido strong {
+  font-size: 25px;
+
+  color: #d88932;
+}
+
+
+/* Informações */
+
+.informacoes-pedido {
+  text-align: left;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 16px;
+
+  padding: 16px;
+
+  margin-bottom: 18px;
+}
+
+
+.informacoes-pedido > div {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.informacoes-pedido > div:last-child {
+  border-bottom: none;
+}
+
+
+.informacoes-pedido span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+.informacoes-pedido strong {
+  font-size: 14px;
+
+  text-align: right;
+}
+
+
+.informacoes-pedido .total-pedido strong {
+  font-size: 20px;
+
+  color: #d88932;
+}
+
+
+/* Status */
+
+.status-pedido {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  text-align: left;
+
+  padding: 15px;
+
+  background: #f7f7f7;
+
+  border-radius: 15px;
+
+  margin-bottom: 20px;
+}
+
+
+.status-pedido > span {
+  font-size: 27px;
+}
+
+
+.status-pedido strong {
+  font-size: 14px;
+}
+
+
+.status-pedido p {
+  margin: 3px 0 0;
+
+  font-size: 12px;
+
+  color: #777;
+}
+
+
+/* Botão */
+
+.botao-voltar-inicio {
+  width: 100%;
+
+  border: none;
+
+  border-radius: 14px;
+
+  padding: 15px;
+
+  background: #d88932;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.botao-voltar-inicio:hover {
+  opacity: 0.9;
+}
+
+
+/* Celular */
+
+@media (max-width: 600px) {
+
+  .fundo-finalizacao {
+    padding: 10px;
+  }
+
+
+  .painel-finalizacao {
+    padding: 28px 18px;
+
+    border-radius: 22px;
+  }
+
+
+  .painel-finalizacao h1 {
+    font-size: 24px;
+  }
+
+}

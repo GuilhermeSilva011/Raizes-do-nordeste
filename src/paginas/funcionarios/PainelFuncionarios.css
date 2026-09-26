@@ -1,0 +1,620 @@
+/*
+ * ==========================================================
+ * ÁREA DO FUNCIONÁRIO
+ * ==========================================================
+ */
+
+.pagina-funcionario {
+  min-height: 100vh;
+  background: #f8f5ef;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*
+ * ==========================================================
+ * CARD DE LOGIN
+ * ==========================================================
+ */
+
+.card-funcionario-login {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 35px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+.icone-funcionario {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #fff1df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+
+.subtitulo-funcionario {
+  display: block;
+  color: #d9903d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+
+.card-funcionario-login h1 {
+  margin: 0;
+  color: #29231f;
+  font-size: 28px;
+}
+
+
+.descricao-funcionario {
+  margin: 10px 0 25px;
+  color: #77716b;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+
+/*
+ * ==========================================================
+ * IDENTIFICAÇÃO DO TERMINAL
+ * ==========================================================
+ */
+
+.terminal-identificacao {
+  background: #f7f1e9;
+  border: 1px solid #eadbc9;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.terminal-identificacao span {
+  color: #8a8179;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.terminal-identificacao strong {
+  color: #9a5a25;
+  font-size: 16px;
+}
+
+
+/*
+ * ==========================================================
+ * FORMULÁRIO
+ * ==========================================================
+ */
+
+.formulario-funcionario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+.formulario-funcionario label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #4d4742;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+.formulario-funcionario input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #e2dcd4;
+  border-radius: 12px;
+  padding: 0 14px;
+  outline: none;
+  background: #ffffff;
+  color: #29231f;
+  font-size: 14px;
+}
+
+
+.formulario-funcionario input:focus {
+  border-color: #d9903d;
+  box-shadow: 0 0 0 3px rgba(217, 144, 61, 0.12);
+}
+
+
+/*
+ * ==========================================================
+ * ERRO
+ * ==========================================================
+ */
+
+.erro-funcionario {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #fff0f0;
+  border: 1px solid #f0caca;
+  color: #a12626;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/*
+ * ==========================================================
+ * BOTÕES
+ * ==========================================================
+ */
+
+.botao-entrar-funcionario {
+  width: 100%;
+  min-height: 50px;
+  border: none;
+  border-radius: 13px;
+  background: #a95e25;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.botao-entrar-funcionario:hover {
+  background: #8f4f20;
+}
+
+
+.botao-entrar-funcionario:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.botao-secundario-funcionario {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 12px;
+  border: 1px solid #e1d8ce;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #5e554e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+.botao-secundario-funcionario:hover {
+  background: #f8f4ef;
+}
+
+
+.botao-sair-funcionario {
+  min-height: 48px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 12px;
+  background: #b33a3a;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+.botao-sair-funcionario:hover {
+  background: #972e2e;
+}
+
+
+/*
+ * ==========================================================
+ * INFORMAÇÃO DO LOGIN
+ * ==========================================================
+ */
+
+.informacao-login-funcionario {
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #faf7f2;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.informacao-login-funcionario strong {
+  color: #4a4038;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+
+.informacao-login-funcionario span {
+  color: #77716b;
+  font-size: 12px;
+}
+
+
+/*
+ * ==========================================================
+ * TERMINAL NÃO CONFIGURADO
+ * ==========================================================
+ */
+
+.aviso-terminal-funcionario {
+  background: #fff7e9;
+  border: 1px solid #efd8ac;
+  border-radius: 15px;
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+
+.aviso-terminal-funcionario strong {
+  color: #8c5b1f;
+  font-size: 14px;
+}
+
+
+.aviso-terminal-funcionario span {
+  color: #786b5e;
+  font-size: 12px;
+}
+
+
+.aviso-terminal-funcionario code {
+  display: block;
+  padding: 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #6e4920;
+  font-size: 11px;
+  overflow-x: auto;
+}
+
+
+/*
+ * ==========================================================
+ * PAINEL OPERACIONAL
+ * ==========================================================
+ */
+
+.painel-operacional-funcionario {
+  width: 100%;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 35px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/*
+ * ==========================================================
+ * CABEÇALHO OPERACIONAL
+ * ==========================================================
+ */
+
+.cabecalho-operacional {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee7df;
+}
+
+
+.cabecalho-operacional h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #29231f;
+}
+
+
+.cabecalho-operacional p {
+  margin: 8px 0 0;
+  color: #817971;
+  font-size: 14px;
+}
+
+
+.setor-atual-funcionario {
+  min-width: 200px;
+  padding: 15px 18px;
+  border-radius: 15px;
+  background: #fff3e4;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.setor-atual-funcionario span {
+  font-size: 22px;
+}
+
+
+.setor-atual-funcionario strong {
+  color: #985621;
+  font-size: 14px;
+}
+
+
+/*
+ * ==========================================================
+ * STATUS
+ * ==========================================================
+ */
+
+.status-operacional-funcionario {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 17px;
+  background: #f0f9f1;
+  border: 1px solid #d3ead5;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+.indicador-online {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+
+.status-operacional-funcionario div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+.status-operacional-funcionario strong {
+  color: #26733a;
+  font-size: 14px;
+}
+
+
+.status-operacional-funcionario span {
+  color: #68736a;
+  font-size: 12px;
+}
+
+
+/*
+ * ==========================================================
+ * CONTEÚDO DO SETOR
+ * ==========================================================
+ */
+
+.conteudo-setor-funcionario {
+  margin-top: 25px;
+}
+
+
+.card-setor {
+  padding: 30px;
+  border-radius: 20px;
+  background: #faf8f5;
+  border: 1px solid #eee7df;
+  text-align: center;
+}
+
+
+.icone-setor {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 20px;
+  background: #fff0df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+
+.card-setor h2 {
+  margin: 0;
+  color: #29231f;
+  font-size: 23px;
+}
+
+
+.card-setor p {
+  max-width: 500px;
+  margin: 10px auto 0;
+  color: #77716b;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+
+.acoes-setor {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+.acoes-setor button {
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 11px;
+  background: #ffffff;
+  border: 1px solid #e1d8ce;
+  color: #5e554e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/*
+ * ==========================================================
+ * INFORMAÇÕES DO FUNCIONÁRIO
+ * ==========================================================
+ */
+
+.informacoes-operacionais {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+
+.informacoes-operacionais > div {
+  padding: 15px;
+  border-radius: 14px;
+  background: #faf8f5;
+  border: 1px solid #eee7df;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.informacoes-operacionais span {
+  color: #8a8179;
+  font-size: 11px;
+}
+
+
+.informacoes-operacionais strong {
+  color: #39322d;
+  font-size: 13px;
+}
+
+
+/*
+ * ==========================================================
+ * AÇÕES OPERACIONAIS
+ * ==========================================================
+ */
+
+.acoes-operacionais {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #eee7df;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+
+/*
+ * ==========================================================
+ * RESPONSIVIDADE
+ * ==========================================================
+ */
+
+@media (max-width: 768px) {
+
+  .pagina-funcionario {
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+
+  .card-funcionario-login {
+    margin-top: 20px;
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+
+  .painel-operacional-funcionario {
+    margin-top: 10px;
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+
+
+  .cabecalho-operacional {
+    flex-direction: column;
+  }
+
+
+  .cabecalho-operacional h1 {
+    font-size: 25px;
+  }
+
+
+  .setor-atual-funcionario {
+    width: 100%;
+  }
+
+
+  .informacoes-operacionais {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .acoes-operacionais {
+    flex-direction: column;
+  }
+
+
+  .botao-sair-funcionario,
+  .acoes-operacionais .botao-secundario-funcionario {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .informacoes-operacionais {
+    grid-template-columns: 1fr;
+  }
+
+
+  .card-setor {
+    padding: 22px 15px;
+  }
+
+
+  .acoes-setor {
+    flex-direction: column;
+  }
+
+
+  .acoes-setor button {
+    width: 100%;
+  }
+
+}
