@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Produto from '../../componentes/produto/Produto'
-import './cardapio.css'
+import './Cardapio.css'
 
 function Cardapio({
   produtos = [],
